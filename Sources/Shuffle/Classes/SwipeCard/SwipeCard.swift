@@ -99,7 +99,8 @@ open class SwipeCard: SwipeView {
     // Content
     if let content = content {
       if let footer = footer, footer.isOpaque {
-        content.frame = CGRect(x: 0, y: 0, width: bounds.width, height: bounds.height - footerHeight)
+        content.frame = CGRect(x: 0, y: 0, width: 152, height: 24)
+        //content.frame = CGRect(x: 0, y: 0, width: bounds.width, height: bounds.height - footerHeight)
       } else {
         content.frame = bounds
       }
