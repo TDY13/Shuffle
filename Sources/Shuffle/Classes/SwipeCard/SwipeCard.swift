@@ -94,7 +94,7 @@ open class SwipeCard: SwipeView {
 
   override open func layoutSubviews() {
     super.layoutSubviews()
-    footer?.frame = CGRect(x: bounds.width / 2, y: bounds.height - footerHeight, width: 152, height: 24)
+    footer?.frame = CGRect(x: bounds.width / 2 - 76, y: bounds.height - footerHeight, width: 152, height: 24)
     // footer?.frame = CGRect(x: 0, y: bounds.height - footerHeight, width: bounds.width, height: footerHeight)
 
     // Content
