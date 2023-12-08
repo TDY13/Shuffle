@@ -108,9 +108,9 @@ open class SwipeCard: SwipeView {
 
     // Overlays
     if footer != nil {
-      overlayContainer.frame = CGRect(x: 0, y: 0, width: bounds.width, height: bounds.height - footerHeight)
+      overlayContainer.frame = CGRect(x: 20, y: 20, width: 32, height: 32)
     } else {
-      overlayContainer.frame = bounds
+      overlayContainer.frame = CGRect(x: 20, y: 20, width: 32, height: 32)
     }
     bringSubviewToFront(overlayContainer)
     overlays.values.forEach { $0.frame = overlayContainer.bounds }
